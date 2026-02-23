@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>大好きなアヌーシャ先輩へ 💖</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Yu Gothic", sans-serif;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    padding: 30px;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: auto;
+}
+
+#giftBtn {
+    position: absolute;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ff6f91;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    transition: transform 0.1s ease;
+}
+
+#giftBtn:hover {
+    transform: scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<h1>💖 大好きなアヌーシャ先輩へ 💖</h1>
+
+<p>
+今日は私にとって特別な日です。<br>
+先輩はいつも優しくて、思いやりがあって、<br>
+私にとって本当に大切な存在です。<br>
+アヌーシャ先輩に出会えて本当に幸せです。🌸<br><br>
+
+これからもたくさん笑って、<br>
+夢に向かって輝き続けてくださいね。✨<br><br>
+
+🎁 下のボタンをクリックして、サプライズを開けてくださいね。
+</p>
+
+<button id="giftBtn">サプライズを開ける 🎁</button>
+
+<script>
+const button = document.getElementById("giftBtn");
+
+// Make button always run away (never opens)
+function moveButton() {
+    const x = Math.random() * (window.innerWidth - 200);
+    const y = Math.random() * (window.innerHeight - 120);
+    button.style.left = x + "px";
+    button.style.top = y + "px";
+}
+
+button.addEventListener("mouseover", moveButton);
+button.addEventListener("click", moveButton);
+
+// Initial position
+button.style.left = "40%";
+button.style.top = "80%";
+</script>
+
+</body>
+</html>
